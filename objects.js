@@ -24,20 +24,20 @@ var person3 = {};
 person3['name'] = 'Ana';
 person3['Date of birth'] = '1990-07-15' // Allow space characters
 
-console.log(person3);
+// console.log(person3);
 
 person3.heightCM = 170;
-console.log(person3); // You can mix dot notation with bracket notation.
+// console.log(person3); // You can mix dot notation with bracket notation.
 
 var person4 = {
     'first name' : 'Arturo',
     age : 35,
 }
 
-console.log(person4);
+// console.log(person4);
 
 person4['age'] = 36;
-console.log(person4['age']);
+// console.log(person4['age']);
 
 
 ////// object iteration of keys /////
@@ -47,8 +47,37 @@ var car = {
     year : '2019',
 };
 
-var carKeys = ['color', 'brand', 'year'];
+var arrOfKeys = ['color', 'brand', 'year'];
 
-for (i = 0; i < carKeys.length; i++) {
-    console.log(car[carKeys[i]]);
+for (i = 0; i < arrOfKeys.length; i++) {
+    console.log(car[arrOfKeys[i]]);
 }
+
+//////// object methods ////////
+
+var plane = {
+    color : 'white',
+    company : 'American Airlines',
+    takeOff : function() {
+        console.log('Fasten your seatbelts, we are going to fly');
+    }
+}
+
+plane.takeOff; // to call a function the () is mandatory
+plane.takeOff();
+
+plane.readyToFly = function(nPilots) {
+    if (nPilots < 2) {
+        console.log('Not ready to fly, you need at least 2 pilots');
+        return false;
+    } else {
+        console.log('Ready to fly');
+        return true;
+    }
+}
+
+plane.readyToFly(nPilots = 2);
+
+
+
+

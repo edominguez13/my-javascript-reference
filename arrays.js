@@ -40,3 +40,12 @@ function letterFinder(word, match) {
 }
 
 letterFinder('test', 't');
+
+/////// using methods pop and push //////
+let fruits = ['mango', 'apple'];
+fruits.push('banana'); // [ 'mango', 'apple', 'banana' ]
+
+
+fruits.pop();
+console.log(fruits) // [ 'mango', 'apple' ]
+
