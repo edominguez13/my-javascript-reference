@@ -1,8 +1,10 @@
+////////////// FOR LOOP //////////////
+
 for (var i = 0 ; i <= 10; i++) {
     console.log(i);
 }
 
-//////////////
+////////////// WHILE LOOP //////////////
 
 
 var counter = 0;
@@ -22,7 +24,7 @@ while (shall_continue) {
     }
 }
 
-//////////////////
+////////////// NESTED LOOPS //////////////
 
 for (i = 1; i <= 2; i++) {
     for (j = 1; j <= 7 ; j ++) {
