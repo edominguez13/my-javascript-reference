@@ -39,20 +39,6 @@ var person4 = {
 person4['age'] = 36;
 // console.log(person4['age']);
 
-
-////// object iteration of keys /////
-var car = {
-    color : 'red',
-    brand : 'toyota',
-    year : '2019',
-};
-
-var arrOfKeys = ['color', 'brand', 'year'];
-
-for (i = 0; i < arrOfKeys.length; i++) {
-    console.log(car[arrOfKeys[i]]);
-}
-
 //////// object methods ////////
 
 var plane = {
